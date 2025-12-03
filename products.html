@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Fuzz Petals Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/products.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Bouquets</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <img src="./Images/LOGO CENTER.png" alt="" class="logo">
+            <div class="nav-icons">
+                <a href="#" class="nav-icon" title="Search">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 21L16.5 16.5M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#5a4a42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="signin.html" class="nav-icon" title="User">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#5a4a42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20.59 22C20.59 18.13 16.74 15 12 15C7.26 15 3.41 18.13 3.41 22" stroke="#5a4a42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="cart.html" class="nav-icon" title="Cart">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#5a4a42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#5a4a42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#5a4a42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="best-sellers">
+        <h2>Best Sellers</h2>
+        <div class="product-grid best-sellers">
+            <div class="product-item">
+                <img src="./Images/purple.jpg" alt="Best Seller 1" class="burgundy">
+                <h3>Purple Tulips</h3>
+                <p>Php 600.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+            <div class="product-item">
+                <img src="./Images/burgundy.jpg" alt="Best Seller 2" class="purple">
+                <h3>Burgundy Mix</h3>
+                <p>Php 600.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+                        <div class="product-item">
+                <img src="./Images/blue.jpg" alt="Best Seller 2" class="purple">
+                <h3>Blue Petals</h3>
+                <p>Php 600.00</p>
+                <a href="cart.html">Purchase Here</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="bouquets">
+        <h2>Bouquets</h2>
+        <div class="product-grid bouquets">
+            <div class="product-item">
+                <img src="./Images/lily.jpg" alt="Bouquet 1">
+                <h3>Pink Lilies</h3>
+                <p>Php 500.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+            <div class="product-item">
+                <img src="./Images/red.jpg" alt="Bouquet 2">
+                <h3>Wildflower Mix</h3>
+                <p>Php 500.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+            <div class="product-item">
+                <img src="./Images/tulip.jpg" alt="Bouquet 3">
+                <h3>Lavender Bundle</h3>
+                <p>Php 500.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+            <div class="product-item">
+                <img src="./Images/green.jpg" alt="Bouquet 4">
+                <h3>Sunflower Delight</h3>
+                <p>Php 300.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+    </section>
+
+    <section id="other-products">
+        <h2>Other Products</h2>
+        <div class="product-grid other-products">
+            <div class="product-item">
+                <img src="./Images/basket0.jpg">
+                <h3>Sunflower Pot</h3>
+                <p>Php 150.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+            <div class="product-item">
+                <img src="./Images/basket1.jpg" alt="Other Product 2">
+                <h3>Gerbera Pot</h3>
+                <p>Php 150.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+            <div class="product-item">
+                <img src="./Images/basket3.jpg" alt="Other Product 3">
+                <h3>Burgundy Lily Pot</h3>
+                <p>Php 150.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+            <div class="product-item">
+                <img src="./Images/basket4.jpg" alt="Other Product 4">
+                <h3>Pink Lily Pot</h3>
+                <p>Php 150.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+            <div class="product-item">
+                <img src="./Images/SINGLE.jpg" alt="Other Product 5">
+                <h3>Single Rose Bouquet</h3>
+                <p>Php 170.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+            <div class="product-item">
+                <img src="./Images/SINGLE 1.jpg" alt="Other Product 6">
+                <h3>Single Lily Bouquet</h3>
+                <p>Php 150.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+            <div class="product-item">
+                <img src="./Images/SINGLE 2.jpg" alt="Other Product 6">
+                <h3>Single Tulip Bouquet</h3>
+                <p>Php 150.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+            <div class="product-item">
+                <img src="./Images/single1.jpg" alt="Other Product 6">
+                <h3>Single Lily Bouquet</h3>
+                <p>Php 150.00</p>
+                <a href="./cart.html">Purchase Here</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Fuzz Petals Studio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+</html>

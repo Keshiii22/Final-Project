@@ -1,0 +1,324 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/background.jpg);  
+    background-size: 50% auto;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-position: top center;
+    background-blend-mode: lighten;
+    background-color: #f9f5f0;
+    color: #333;
+    line-height: 1.6;
+    text-decoration: none;
+}
+header {
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 2px solid #750000;
+}
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav li {
+    margin: 0 .3rem;
+}
+nav a {
+    text-decoration: none;
+    color: #750000;
+    font-weight: 350;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+}
+nav a:hover {
+    background-color: #750000;
+    color: #f9f5f0;
+    border-radius: 20px;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #5a4a42;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+.nav-icon {
+    width: 25px;
+    height: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-icon:hover {
+    opacity: 0.7;
+}
+.nav-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+}
+.logo{
+    height: 50px;
+    display: absolute;
+    align-items: center;
+    margin-left: -5rem;
+}
+section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #5a4a42;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 1rem;
+}
+/* Section 1: Intro (Full-width Banner) */
+.intro {
+    position: relative;
+    height: 60vh;
+    background-image: url(../Images/BGHOME2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: black;
+    }
+.intro h1 {
+    color: #750000;
+    text-align: start;
+    width: 50%;
+    line-height: 2.5rem;
+    padding-left: 50px;
+}
+
+.intro h2 {
+    font-size: 1.5rem;
+    color: #f9f5f0;
+    padding: 10px;
+    background-color: #750000;
+    display: inline;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.intro p{
+    width: 50%;
+    padding-left: 50px;
+}
+/* Section 2: Highlight (Centered Quote) */
+.highlight {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f9f5f0; /* Light brown/beige for subtle accent */
+}
+.highlight h1 {
+    font-size: 2rem;
+    font-style: italic;
+    color: #5a4a42; /* Brown for quote */
+    margin: 0;
+}
+/* Section 3: Story (Two Columns) */
+.story {
+    padding: 4rem 2rem;
+    background-color: #fff; /* White background */
+}
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.story-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.story-text h2{
+    justify-content: flex-start;
+}
+.story-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+/* Section 4: Why Fuzz Petals? (Three Columns) */
+.why-fuzz {
+    padding: 4rem 2rem;
+    background-color: #f9f5f0; /* Light brown/beige for subtle accent */
+    text-align: center;
+}
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.why-item {
+    padding: 1rem;
+    background-color: #fff; /* White for items */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.why-item .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.why-item h3 {
+    color: #750000; /* Red for subheadings */
+}
+/* Section 5: CTA */
+.cta {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #e8d5b7; /* Light brown/beige */
+}
+.cta-button {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: #750000; /* Red button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: #5a4a42; /* Brown on hover */
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #5a4a42; /* Brown footer */
+    color: #fff;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e8d5b7;
+    color: #5a4a42;
+}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        position: absolute;
+        top: 10%;
+        left: 2;
+        width: 50%;
+        background-color: #e8d5b7;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav li {
+        margin: 0.5rem 0;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .show-menu {
+        display: flex !important;
+    }
+    .user-icon {
+        display: none; /* Hide on mobile for simplicity; can add to menu if needed */
+    }
+    .logo {
+        display: none;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .intro {
+        height: 40vh;
+        background-image: none;
+        justify-content: center;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+        padding-left: 0;
+        width: 100%;
+    }
+    
+    .intro p {
+        font-size: .8rem;
+        padding-left: 0;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .intro h2 {
+        font-size: .9rem;
+        margin-left: 0;
+        width: 100%;
+    }
+    .highlight h1 {
+        font-size: 1.5rem;
+
+    }
+    .story-grid {
+        grid-template-columns: 1fr; /* Stack vertically */
+    }
+    .why-grid {
+        grid-template-columns: 1fr; /* Stack vertically */
+    }
+    .story-text, .why-item {
+        text-align: center;
+    }
+}
