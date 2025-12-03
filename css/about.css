@@ -112,6 +112,112 @@ h2 {
 p {
     margin-bottom: 1rem;
 }
+
+footer {
+    text-align: center;
+    padding: .5rem;
+    background-color: #e8d5b7;
+    color: #5a4a42;
+    margin-top: 200px;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    flex-wrap: wrap;
+}
+
+.container h3::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50px;
+    background: #750000;
+    margin-top: 20px;
+}
+
+.container li a:hover {
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.col-1 {
+    flex-basis: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.col-1 img {
+    width: 85px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.col-1 p {
+    color: black;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.col-2 {
+    flex-basis: 15%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.col-2 h3 {
+    color: #750000;
+    font-size: 20px;
+    text-align: left;
+}
+.col-2 ul {
+    list-style: none;
+}
+.col-2 ul li {
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: -23%;
+}
+.col-2 ul li a {
+    color: #750000;
+    text-decoration: none;
+    
+}
+
+.social-icons{
+    margin-top: 50px;
+}
+.social-icons a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #25262A;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+}
+.social-icons a:hover{
+    background: #750000;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.bottom{
+    border-top: 2px solid #750000; 
+    width: 100%;               
+    margin: 20px 0;
+}
+
+.bottom p {
+    margin-top: 50px;
+}
 /* Section 1: Intro (Full-width Banner) */
 .intro {
     position: relative;
@@ -321,4 +427,19 @@ footer {
     .story-text, .why-item {
         text-align: center;
     }
+    footer{
+        font-size: .8rem;
+    }
+    .col-1 p {
+        font-size: .5rem;
+    }
+    .col-1 img{
+        width: 50px;
+    }
+
+    .col-2 ul li {
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: -70%;
+}
 }
